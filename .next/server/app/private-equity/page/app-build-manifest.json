@@ -1,0 +1,16 @@
+{
+  "pages": {
+    "/private-equity/page": [
+      "static/chunks/ff1a16fafef87110.js",
+      "static/chunks/6a7993b07cb97bb3.js",
+      "static/chunks/2cec2b46e08a4354.css",
+      "static/chunks/b29c14dc7e3a3c25.js",
+      "static/chunks/6a069308228e6af6.js",
+      "static/chunks/6420740671896b80.js",
+      "static/chunks/250b8b9eeaf12c7d.js",
+      "static/chunks/202abb9aed9e828b.js",
+      "static/chunks/5e8409752c00fb4e.js",
+      "static/chunks/turbopack-0b4a1506e4e8e394.js"
+    ]
+  }
+}

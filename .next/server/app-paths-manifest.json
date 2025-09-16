@@ -1,0 +1,20 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/advisory/page": "app/advisory/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/insights/ai-investment-banking/page": "app/insights/ai-investment-banking/page.js",
+  "/insights/csr-beyond-compliance/page": "app/insights/csr-beyond-compliance/page.js",
+  "/insights/global-scaling/page": "app/insights/global-scaling/page.js",
+  "/insights/hanshills-philosophy/page": "app/insights/hanshills-philosophy/page.js",
+  "/insights/investment-strategy/page": "app/insights/investment-strategy/page.js",
+  "/insights/ma-trends-2025/page": "app/insights/ma-trends-2025/page.js",
+  "/insights/market-outlook-2025/page": "app/insights/market-outlook-2025/page.js",
+  "/insights/page": "app/insights/page.js",
+  "/insights/private-capital-convergence/page": "app/insights/private-capital-convergence/page.js",
+  "/insights/value-creation-framework/page": "app/insights/value-creation-framework/page.js",
+  "/page": "app/page.js",
+  "/private-equity/page": "app/private-equity/page.js",
+  "/venture-capital/page": "app/venture-capital/page.js"
+}

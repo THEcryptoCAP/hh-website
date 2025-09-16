@@ -1,0 +1,149 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/advisory",
+      "regex": "^/advisory(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/advisory(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/insights",
+      "regex": "^/insights(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights(?:/)?$"
+    },
+    {
+      "page": "/insights/ai-investment-banking",
+      "regex": "^/insights/ai\\-investment\\-banking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/ai\\-investment\\-banking(?:/)?$"
+    },
+    {
+      "page": "/insights/csr-beyond-compliance",
+      "regex": "^/insights/csr\\-beyond\\-compliance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/csr\\-beyond\\-compliance(?:/)?$"
+    },
+    {
+      "page": "/insights/global-scaling",
+      "regex": "^/insights/global\\-scaling(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/global\\-scaling(?:/)?$"
+    },
+    {
+      "page": "/insights/hanshills-philosophy",
+      "regex": "^/insights/hanshills\\-philosophy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/hanshills\\-philosophy(?:/)?$"
+    },
+    {
+      "page": "/insights/investment-strategy",
+      "regex": "^/insights/investment\\-strategy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/investment\\-strategy(?:/)?$"
+    },
+    {
+      "page": "/insights/ma-trends-2025",
+      "regex": "^/insights/ma\\-trends\\-2025(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/ma\\-trends\\-2025(?:/)?$"
+    },
+    {
+      "page": "/insights/market-outlook-2025",
+      "regex": "^/insights/market\\-outlook\\-2025(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/market\\-outlook\\-2025(?:/)?$"
+    },
+    {
+      "page": "/insights/private-capital-convergence",
+      "regex": "^/insights/private\\-capital\\-convergence(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/private\\-capital\\-convergence(?:/)?$"
+    },
+    {
+      "page": "/insights/value-creation-framework",
+      "regex": "^/insights/value\\-creation\\-framework(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/value\\-creation\\-framework(?:/)?$"
+    },
+    {
+      "page": "/private-equity",
+      "regex": "^/private\\-equity(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/private\\-equity(?:/)?$"
+    },
+    {
+      "page": "/venture-capital",
+      "regex": "^/venture\\-capital(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/venture\\-capital(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
