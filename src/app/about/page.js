@@ -1,5 +1,7 @@
+'use client';
 import Link from 'next/link';
 import SpotlightCard from '../components/SpotlightCard';
+import Logo from '../components/Logo';
 
 export default function About() {
   return (
