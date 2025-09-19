@@ -105,7 +105,7 @@ export default function Home() {
           {/* Main Hero Image with Flowy Scroll Parallax */}
           <div className="relative w-full h-full">
           <img 
-            src={heroImage.src} 
+            src={heroImage}
               alt="Hero Background - Professional Investment Landscape" 
               className={`w-full h-full object-cover transition-all duration-3000 ease-out transform ${
                 imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
@@ -113,8 +113,7 @@ export default function Home() {
               style={{
                 filter: `brightness(${0.9 - scrollY * 0.00003}) contrast(${1.15 + scrollY * 0.00001}) saturate(${1.2 + scrollY * 0.000005})`,
                 transform: `translateY(${scrollY * 0.5}px) scale(${1.15 + scrollY * 0.00002})`,
-                transition: 'all 0.05s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                objectPosition: 'center center'
+                transition: 'all 0.05s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
               }}
               onLoad={() => setImageLoaded(true)}
               onError={(e) => {
