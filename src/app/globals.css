@@ -541,6 +541,18 @@ body {
 
 /* Mobile optimizations */
 @media (max-width: 768px) {
+  /* Typography scale tuned for mobile readability */
+  .text-heading-1 { font-size: 2rem; line-height: 1.2; }
+  .text-heading-2 { font-size: 1.75rem; line-height: 1.25; }
+  .text-heading-3 { font-size: 1.375rem; line-height: 1.3; }
+  .text-body-large { font-size: 1rem; line-height: 1.6; }
+  .btn-large { padding: 0.75rem 1.25rem; font-size: 1rem; }
+  .container { padding-left: 1rem; padding-right: 1rem; }
+  body { font-size: 0.95rem; }
+
+  /* Prevent content being hidden under fixed navbar */
+  .has-sticky-nav { padding-top: 64px; }
+
   .animate-blob-3d,
   .animate-blob-3d-delayed,
   .animate-blob-3d-slow,

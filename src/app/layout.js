@@ -1,6 +1,7 @@
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import WireframeMesh from "./components/WireframeMesh";
+import Navbar from "./components/Navbar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       >
         {/* Global Wireframe Mesh Background */}
         <WireframeMesh />
+        <Navbar />
         {children}
       </body>
     </html>

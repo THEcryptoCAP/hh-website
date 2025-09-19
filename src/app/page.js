@@ -65,34 +65,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50 transition-all duration-300 shadow-lg">
-        <div className="container">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0">
-              <Link href="/">
-                <Logo size="default" />
-              </Link>
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <Link href="/" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Home</Link>
-                <Link href="/about" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">About</Link>
-                <Link href="/private-equity" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Private Equity</Link>
-                <Link href="/venture-capital" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Venture Capital</Link>
-                <Link href="/advisory" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Advisory</Link>
-                <Link href="/insights" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Insights</Link>
-                <Link href="/contact" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Contact</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section 
         ref={heroRef.elementRef}
-        className={`pt-24 pb-16 px-4 sm:px-6 lg:px-8 relative z-10 transition-all duration-1000 ease-out ${
+        className={`pt-24 pb-12 px-4 sm:px-6 lg:px-8 relative z-10 transition-all duration-1000 ease-out ${
           heroRef.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
@@ -107,16 +84,16 @@ export default function Home() {
         
         {/* Content */}
         <div className="container text-center relative z-20">
-          <h1 className="text-heading-1 font-serif font-bold text-foreground leading-tight mb-8 drop-shadow-2xl">
+          <h1 className="text-heading-1 font-serif font-bold text-foreground leading-tight mb-6 drop-shadow-2xl">
             <span className="block mb-4">Where Capital Meets Strategy</span>
-            <span className="block text-heading-3 text-foreground/95 mt-4 min-h-[1.2em]">
+            <span className="block text-heading-3 text-foreground/95 mt-2 min-h-[1.2em]">
               {typewriterText}
             </span>
           </h1>
-          <p className="text-body-large text-foreground/90 max-w-4xl mx-auto mb-12 leading-relaxed drop-shadow-lg">
+          <p className="text-body-large text-foreground/90 max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-lg">
             From visionary founders to established enterprises, we invest, advise, and accelerate growth through our three integrated verticals: Private Equity, Venture Capital, and Advisory.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Link href="/venture-capital" className="btn btn-primary btn-large">
               For Founders → Pitch Us
             </Link>
@@ -133,7 +110,7 @@ export default function Home() {
       {/* Philosophy Section */}
       <section 
         ref={philosophyRef.elementRef}
-        className={`py-16 px-4 sm:px-6 lg:px-8 bg-muted transition-all duration-1000 ease-out ${
+        className={`py-14 sm:py-16 px-4 sm:px-6 lg:px-8 bg-muted transition-all duration-1000 ease-out ${
           philosophyRef.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
@@ -150,16 +127,16 @@ export default function Home() {
       {/* Services Section */}
       <section 
         ref={servicesRef.elementRef}
-        className={`py-20 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ease-out ${
+        className={`py-16 sm:py-20 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ease-out ${
           servicesRef.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
         <div className="container">
           {/* Private Equity */}
           <div className="mb-20">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="relative group md:order-1">
-                <div className="w-full h-80 rounded-2xl shadow-2xl overflow-hidden">
+                <div className="w-full h-[260px] sm:h-80 rounded-2xl shadow-2xl overflow-hidden">
                   <img 
                     src={privateEquityImage.src} 
                     alt="Private Equity" 
@@ -181,9 +158,9 @@ export default function Home() {
 
           {/* Venture Capital */}
           <div className="mb-20">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="relative group md:order-2">
-                <div className="w-full h-80 rounded-2xl shadow-2xl overflow-hidden">
+                <div className="w-full h-[260px] sm:h-80 rounded-2xl shadow-2xl overflow-hidden">
                   <img 
                     src={ventureCapitalImage.src} 
                     alt="Venture Capital" 
@@ -205,9 +182,9 @@ export default function Home() {
 
           {/* Advisory */}
           <div className="mb-20">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="relative group md:order-1">
-                <div className="w-full h-80 rounded-2xl shadow-2xl overflow-hidden">
+                <div className="w-full h-[260px] sm:h-80 rounded-2xl shadow-2xl overflow-hidden">
                   <img 
                     src={strategicAdvisorImage.src} 
                     alt="Strategic Advisory" 
@@ -232,7 +209,7 @@ export default function Home() {
       {/* Insights Section */}
       <section 
         ref={insightsRef.elementRef}
-        className={`py-16 px-4 sm:px-6 lg:px-8 bg-muted transition-all duration-1000 ease-out ${
+        className={`py-14 sm:py-16 px-4 sm:px-6 lg:px-8 bg-muted transition-all duration-1000 ease-out ${
           insightsRef.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
@@ -252,7 +229,7 @@ export default function Home() {
       {/* Closing CTA */}
       <section 
         ref={ctaRef.elementRef}
-        className={`py-20 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ease-out ${
+        className={`py-16 sm:py-20 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ease-out ${
           ctaRef.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
