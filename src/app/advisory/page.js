@@ -1,168 +1,174 @@
 import Link from 'next/link';
-import Logo from '../components/Logo';
+import SpotlightCard from '../components/SpotlightCard';
 
 export default function Advisory() {
   return (
     <div className="min-h-screen relative z-10">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50 transition-all duration-300 shadow-lg">
-        <div className="container">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0">
-              <Link href="/">
-                <Logo size="default" />
-              </Link>
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <Link href="/" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Home</Link>
-                <Link href="/about" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">About</Link>
-                <Link href="/private-equity" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Private Equity</Link>
-                <Link href="/venture-capital" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Venture Capital</Link>
-                <Link href="/advisory" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Advisory</Link>
-                <Link href="/insights" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Insights</Link>
-                <Link href="/contact" className="text-foreground hover:text-primary px-4 py-2 text-sm font-medium transition-all duration-500 ease-in-out hover:scale-105 bg-secondary/20 hover:bg-secondary/40 rounded-lg border border-border/30 hover:border-primary/50">Contact</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold text-foreground leading-tight mb-8">
-            Advisory That Delivers Clarity and Results
-          </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Our advisory arm bridges strategy and execution. Whether you're exploring an exit, raising capital, or reimagining your growth strategy, we combine the precision of investment banking with the insight of consulting to deliver actionable outcomes that create lasting value.
+          <h1 className="text-heading-2 md:text-heading-1 font-serif font-bold text-foreground leading-tight mb-6">Architects of Transformation</h1>
+          <p className="text-body-large text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            We operate at the intersection of capital, technology, and design, shaping ventures, partnerships, and ecosystems that are resilient, innovation-led, and impact-driven.
           </p>
         </div>
       </section>
 
-      {/* Our Advisory Approach Section */}
+      {/* Divider */}
+      <div className="container"><div className="border-t border-border/60 my-8"></div></div>
+
+      {/* Venture Studio & Strategic Advisory */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-12 text-center">Our Advisory Approach</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-secondary p-8 rounded-lg border border-border shadow-sm">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Dealmaking Precision</h3>
-              <p className="text-muted-foreground">
-                From sell-side M&A to capital raising, we execute transactions with discipline, discretion, and maximum value capture.
-              </p>
-            </div>
-            <div className="bg-secondary p-8 rounded-lg border border-border shadow-sm">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Strategic Clarity</h3>
-              <p className="text-muted-foreground">
-                Beyond the deal, we provide market intelligence, growth roadmaps, and financial modeling to help businesses make informed decisions.
-              </p>
-            </div>
-            <div className="bg-secondary p-8 rounded-lg border border-border shadow-sm">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Integrated Expertise</h3>
-              <p className="text-muted-foreground">
-                Because we operate alongside PE and VC, we bring an investor's mindset to every advisory engagement.
-              </p>
-            </div>
-            <div className="bg-secondary p-8 rounded-lg border border-border shadow-sm">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Partnership, Not Paperwork</h3>
-              <p className="text-muted-foreground">
-                We work closely with leadership teams, aligning execution with long-term vision.
-              </p>
-            </div>
+        <div className="container max-w-6xl mx-auto">
+          <h2 className="text-heading-3 font-serif font-bold text-foreground mb-8 text-center">Venture Studio & Strategic Advisory</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Venture Studio</h3>
+              <p className="text-muted-foreground">End-to-end incubation and scaling of enterprises.</p>
+            </SpotlightCard>
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Investment Banking</h3>
+              <p className="text-muted-foreground">Structuring of equity, debt, and hybrid capital solutions.</p>
+            </SpotlightCard>
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v1m-7 0v-1m-7-2a3 3 0 005.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M12 14a3 3 0 013 3v4m-6 0v-4a3 3 0 013-3m-9 0h18" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Strategic Partnerships</h3>
+              <p className="text-muted-foreground">Cross-border, cross-sector alliances engineered for growth and resilience.</p>
+            </SpotlightCard>
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-4m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-4m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">PPP & CSR Projects</h3>
+              <p className="text-muted-foreground">Advisory and execution in public–private partnerships and corporate social responsibility mandates.</p>
+            </SpotlightCard>
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Eco Tech Initiatives</h3>
+              <p className="text-muted-foreground">Sustainability-driven projects integrating environmental stewardship with technological advancement.</p>
+            </SpotlightCard>
           </div>
+          <p className="text-center mt-6 text-body-large text-muted-foreground max-w-4xl mx-auto">
+            We do not simply fund ventures; we institutionalize them. We align capital with governance and strategy, creating enterprises built to endure volatility and compound value across cycles.
+          </p>
         </div>
       </section>
 
-      {/* Our Services Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-12 text-center">Our Services</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-secondary p-8 rounded-lg border border-border shadow-sm">
-              <h3 className="text-xl font-semibold text-foreground mb-4">M&A Advisory</h3>
-              <p className="text-muted-foreground">
-                Sell-side transactions, mergers, carve-outs, strategic exits.
-              </p>
-            </div>
-            <div className="bg-secondary p-8 rounded-lg border border-border shadow-sm">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Capital Raising</h3>
-              <p className="text-muted-foreground">
-                Equity & debt advisory, fundraising strategy, investor introductions.
-              </p>
-            </div>
-            <div className="bg-secondary p-8 rounded-lg border border-border shadow-sm">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Strategic Consulting</h3>
-              <p className="text-muted-foreground">
-                Market entry, business model refinement, growth strategy.
-              </p>
-            </div>
-            <div className="bg-secondary p-8 rounded-lg border border-border shadow-sm">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Financial Modeling & Valuations</h3>
-              <p className="text-muted-foreground">
-                Deep analysis to support deals and decision-making.
-              </p>
-            </div>
-            <div className="bg-secondary p-8 rounded-lg border border-border shadow-sm md:col-span-2">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Value Creation Advisory</h3>
-              <p className="text-muted-foreground">
-                Post-deal operational support to strengthen performance.
-              </p>
-            </div>
+      {/* Divider */}
+      <div className="container"><div className="border-t border-border/60 my-8"></div></div>
+
+      {/* Technology & Development Partner */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-6xl mx-auto">
+          <h2 className="text-heading-3 font-serif font-bold text-foreground mb-8 text-center">Technology & Development Partner</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Core Competence</h3>
+              <p className="text-muted-foreground">Systems & process architecture, AI frameworks, Web 3.0 ecosystems.</p>
+            </SpotlightCard>
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Delivery Model</h3>
+              <p className="text-muted-foreground">Decentralized, yet structured and outcome-driven.</p>
+            </SpotlightCard>
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v1m-7 0v-1m-7-2a3 3 0 005.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M12 14a3 3 0 013 3v4m-6 0v-4a3 3 0 013-3m-9 0h18" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Expert Ecosystem</h3>
+              <ul className="text-left list-disc pl-5 text-muted-foreground">
+                <li>Industry practitioners with domain-specific expertise.</li>
+                <li>Specialized subject-matter and technology experts.</li>
+                <li>PAN-IIT networks of innovators and technologists.</li>
+                <li>Academicians of global distinction.</li>
+              </ul>
+            </SpotlightCard>
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 01-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Scope of Engagement</h3>
+              <p className="text-muted-foreground">Portfolio companies, in-house initiatives, strategic alliances, and client mandates.</p>
+            </SpotlightCard>
           </div>
+          <p className="text-center mt-6 text-body-large text-muted-foreground max-w-4xl mx-auto">
+            Technology, for us, is not a service but an architecture of scale. We embed intelligence, efficiency, and resilience into every system we design, ensuring outcomes that meet institutional-grade rigor.
+          </p>
         </div>
       </section>
 
-      {/* Why Work With Us Section */}
+      {/* Divider */}
+      <div className="container"><div className="border-t border-border/60 my-8"></div></div>
+
+      {/* Design Studio & Innovation Partner */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-8 text-center">Why Work With Us</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Trusted Execution</h3>
-              <p className="text-muted-foreground">
-                Deal discipline backed by global-standard advisory practices.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Strategic Insight</h3>
-              <p className="text-muted-foreground">
-                We don't just structure deals — we help you understand the "why" behind them.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Lifecycle Partner</h3>
-              <p className="text-muted-foreground">
-                Whether you're a startup raising growth capital, or an established business planning an exit, we bring continuity across your journey.
-              </p>
-            </div>
+        <div className="container max-w-6xl mx-auto">
+          <h2 className="text-heading-3 font-serif font-bold text-foreground mb-8 text-center">Design Studio & Innovation Partner</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Design Solutions</h3>
+              <p className="text-muted-foreground">Branding, communication, and identity systems.</p>
+            </SpotlightCard>
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.414-.586h-12a2 2 0 00-1.414.586m14.828 0v-5.656a2 2 0 00-.586-1.414L15.414 4.586a2 2 0 00-1.414-.586H4a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-2.828m.414-9.414l2.828 2.828a2 2 0 010 2.828l-2.828 2.828" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Product R&D</h3>
+              <p className="text-muted-foreground">Concept-to-prototype development driven by structured innovation.</p>
+            </SpotlightCard>
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Strategy & Branding</h3>
+              <p className="text-muted-foreground">Narrative-building, positioning, and market differentiation.</p>
+            </SpotlightCard>
+            <SpotlightCard className="p-8 text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              <h3 className="text-lg font-semibold text-foreground mb-2">CSR & Social Impact Design</h3>
+              <p className="text-muted-foreground">Purpose-led solutions integrating community, ecology, and sustainability.</p>
+            </SpotlightCard>
           </div>
+          <p className="text-center mt-6 text-body-large text-muted-foreground max-w-4xl mx-auto">
+            Design is our instrument of transformation—functional, human-centered, and impact-oriented. We move beyond aesthetics to architect strategies and innovations that align purpose with performance.
+          </p>
         </div>
       </section>
 
-      {/* Closing Note Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <blockquote className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-8 italic">
-            "Great businesses don't just need capital — they need clarity, partners, and precision. Our advisory team helps you chart the path forward and execute with confidence."
-          </blockquote>
-          <Link href="/contact" className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent transition-all duration-300">
-            Explore Our Advisory Services
-          </Link>
+      {/* Divider */}
+      <div className="container"><div className="border-t border-border/60 my-8"></div></div>
+
+      {/* Schedule a Consultation */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-3xl mx-auto">
+          <h2 className="text-heading-3 font-serif font-bold text-foreground mb-8 text-center">Schedule a Consultation</h2>
+          <SpotlightCard className="p-8">
+            <div className="text-center">
+              <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+              <p className="text-body-large text-muted-foreground mb-6">Book a strategic consultation with our team for ₹3,999 per hour.</p>
+            </div>
+            <form className="grid gap-4">
+              <input type="text" placeholder="Your Name" className="bg-secondary border border-border rounded-md px-3 py-2 text-foreground placeholder:text-muted-foreground" required />
+              <input type="email" placeholder="Your Email" className="bg-secondary border border-border rounded-md px-3 py-2 text-foreground placeholder:text-muted-foreground" required />
+              <input type="datetime-local" className="bg-secondary border border-border rounded-md px-3 py-2 text-foreground placeholder:text-muted-foreground" required />
+              <button type="submit" className="btn btn-primary">Book Now</button>
+            </form>
+            <p className="text-body-small text-muted-foreground mt-4 text-center">Note: This is a placeholder form. Please contact us to confirm your booking.</p>
+          </SpotlightCard>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="container"><div className="border-t border-border/60 my-8"></div></div>
+
+      {/* Our Institutional Ethos */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted">
+        <div className="container max-w-4xl mx-auto text-center">
+          <h2 className="text-heading-3 font-serif font-bold text-foreground mb-8">Our Institutional Ethos</h2>
+          <SpotlightCard className="p-8 max-w-2xl mx-auto text-left">
+            <svg className="w-12 h-12 mx-auto text-foreground mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+            <ul className="text-body-large list-disc pl-6 text-muted-foreground space-y-2">
+              <li>We do not advise, we architect.</li>
+              <li>We do not transact, we transform.</li>
+              <li>We do not operate in silos, we orchestrate ecosystems.</li>
+              <li>We do not network, we cultivate enduring partnerships.</li>
+            </ul>
+          </SpotlightCard>
         </div>
       </section>
 

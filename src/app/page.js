@@ -8,6 +8,7 @@ import Logo from './components/Logo';
 import ventureCapitalImage from '../../public/venture capital visual.avif';
 import privateEquityImage from '../../public/private equity visual.avif';
 import strategicAdvisorImage from '../../public/stratedgic advisor image.avif';
+import SpotlightCard from './components/SpotlightCard';
 import heroImage from '../../public/hero section images.avif';
 
 // Custom hook for typewriter effect
@@ -144,7 +145,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="transition-all duration-1000 ease-out delay-300 md:order-2">
+              <SpotlightCard className="transition-all duration-1000 ease-out delay-300 md:order-2 p-6 sm:p-8">
                 <h2 className="text-heading-2 font-serif font-bold text-foreground mb-6">Private Equity with Purpose</h2>
                 <p className="text-body-large text-muted-foreground leading-relaxed mb-8">
                   We partner with high-potential businesses and established enterprises to create sustainable value. Through strategic capital, operational expertise, and global networks, we help companies scale new heights while delivering enduring returns for stakeholders.
@@ -152,7 +153,7 @@ export default function Home() {
                 <Link href="/private-equity" className="btn btn-primary">
                   Explore Our PE Approach
                 </Link>
-              </div>
+              </SpotlightCard>
             </div>
           </div>
 
@@ -168,7 +169,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="transition-all duration-1000 ease-out delay-300 md:order-1">
+              <SpotlightCard className="transition-all duration-1000 ease-out delay-300 md:order-1 p-6 sm:p-8">
                 <h2 className="text-heading-2 font-serif font-bold text-foreground mb-6">Backing Tomorrow's Visionaries</h2>
                 <p className="text-body-large text-muted-foreground leading-relaxed mb-8">
                   We invest in founders who dare to reimagine the future. Beyond capital, we provide strategic guidance, operational playbooks, and access to an ecosystem that empowers startups to grow smarter, faster, and stronger.
@@ -176,7 +177,7 @@ export default function Home() {
                 <Link href="/venture-capital" className="btn btn-primary">
                   Pitch Your Startup
                 </Link>
-              </div>
+              </SpotlightCard>
             </div>
           </div>
 
@@ -192,7 +193,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="transition-all duration-1000 ease-out delay-300 md:order-2">
+              <SpotlightCard className="transition-all duration-1000 ease-out delay-300 md:order-2 p-6 sm:p-8">
                 <h2 className="text-heading-2 font-serif font-bold text-foreground mb-6">Advisory That Delivers Clarity & Results</h2>
                 <p className="text-body-large text-muted-foreground leading-relaxed mb-8">
                   From sell-side M&A and capital raising to strategic consulting and value creation, our advisory arm blends investment banking precision with consulting insight. We help businesses make informed decisions, execute flawlessly, and achieve transformative outcomes.
@@ -200,7 +201,7 @@ export default function Home() {
                 <Link href="/advisory" className="btn btn-primary">
                   Learn About Our Advisory Services
                 </Link>
-              </div>
+              </SpotlightCard>
             </div>
           </div>
         </div>

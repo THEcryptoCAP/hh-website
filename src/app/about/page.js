@@ -1,32 +1,9 @@
 import Link from 'next/link';
-import Logo from '../components/Logo';
+import SpotlightCard from '../components/SpotlightCard';
 
 export default function About() {
   return (
     <div className="min-h-screen relative z-10">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="container">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0">
-              <Link href="/">
-                <Logo size="default" />
-              </Link>
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <Link href="/" className="text-muted-foreground hover:text-foreground px-3 py-2 text-sm font-medium transition-colors">Home</Link>
-                <Link href="/about" className="text-foreground hover:text-muted-foreground px-3 py-2 text-sm font-medium transition-colors">About</Link>
-                <Link href="/private-equity" className="text-muted-foreground hover:text-foreground px-3 py-2 text-sm font-medium transition-colors">Private Equity</Link>
-                <Link href="/venture-capital" className="text-muted-foreground hover:text-foreground px-3 py-2 text-sm font-medium transition-colors">Venture Capital</Link>
-                <Link href="/advisory" className="text-muted-foreground hover:text-foreground px-3 py-2 text-sm font-medium transition-colors">Advisory</Link>
-                <Link href="/insights" className="text-muted-foreground hover:text-foreground px-3 py-2 text-sm font-medium transition-colors">Insights</Link>
-                <Link href="/contact" className="text-muted-foreground hover:text-foreground px-3 py-2 text-sm font-medium transition-colors">Contact</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
@@ -60,30 +37,30 @@ export default function About() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-heading-3 font-serif font-bold text-foreground mb-12 text-center">Our Ethos</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="card">
+              <SpotlightCard className="p-8">
                 <h3 className="text-heading-4 font-semibold text-foreground mb-4">Value Creation First</h3>
                 <p className="text-body text-muted-foreground">
                   Every engagement whether investment or advisory is guided by our commitment to generate sustainable long-term value.
                 </p>
-              </div>
-              <div className="card">
+              </SpotlightCard>
+              <SpotlightCard className="p-8">
                 <h3 className="text-heading-4 font-semibold text-foreground mb-4">Partnership Over Transactions</h3>
                 <p className="text-body text-muted-foreground">
                   We see relationships as collaborations, not one-off deals.
                 </p>
-              </div>
-              <div className="card">
+              </SpotlightCard>
+              <SpotlightCard className="p-8">
                 <h3 className="text-heading-4 font-semibold text-foreground mb-4">Integrated Expertise</h3>
                 <p className="text-body text-muted-foreground">
                   With the combined power of PE, VC, and Advisory, we bring clarity and capability across the entire business lifecycle.
                 </p>
-              </div>
-              <div className="card">
+              </SpotlightCard>
+              <SpotlightCard className="p-8">
                 <h3 className="text-heading-4 font-semibold text-foreground mb-4">Intentional Growth</h3>
                 <p className="text-body text-muted-foreground">
                   Every decision is made with precision, discipline, and purpose.
                 </p>
-              </div>
+              </SpotlightCard>
             </div>
           </div>
         </div>
