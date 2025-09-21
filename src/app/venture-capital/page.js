@@ -188,9 +188,21 @@ export default function VentureCapital() {
               </ul>
             </div>
             <div>
+              <h4 className="font-semibold mb-4">Legal</h4>
+              <ul className="space-y-2 text-muted-foreground">
+                <li><Link href="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms-conditions" className="hover:text-primary-foreground transition-colors">Terms & Conditions</Link></li>
+              </ul>
+            </div>
+            <div>
               <h4 className="font-semibold mb-4">Connect</h4>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-3">
                 Ready to create value together? Let's discuss how we can help you achieve your goals.
+              </p>
+              <p className="text-muted-foreground">
+                <a href="mailto:reach@hanshillsco.com" className="hover:text-primary-foreground transition-colors">
+                  reach@hanshillsco.com
+                </a>
               </p>
             </div>
           </div>

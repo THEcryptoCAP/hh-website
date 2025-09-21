@@ -21,7 +21,7 @@ export default function MountainLogo() {
         : 'opacity-0 scale-75 rotate-12'
     }`}>
       <Image
-        src="/mountain logo.webp"
+        src="/1.png"
         alt="Hanshills Mountain Logo"
         width={24}
         height={24}

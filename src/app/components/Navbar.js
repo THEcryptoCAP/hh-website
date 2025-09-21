@@ -30,8 +30,8 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-6">
             <Link href="/" className="nav-link">Home</Link>
             <Link href="/about" className="nav-link">About</Link>
-            <Link href="/private-equity" className="nav-link">Private Equity</Link>
-            <Link href="/venture-capital" className="nav-link">Venture Capital</Link>
+            <Link href="/private-equity" className="nav-link">PE/VC</Link>
+            <Link href="/venture-capital" className="nav-link">Venture Studio</Link>
             <Link href="/advisory" className="nav-link">Advisory</Link>
             <Link href="/insights" className="nav-link">Insights</Link>
             <Link href="/contact" className="nav-link">Contact</Link>

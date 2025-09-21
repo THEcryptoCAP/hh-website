@@ -254,9 +254,9 @@ export default function WireframeMesh() {
         const mouseRotationX = mouseRef.current.y * 0.1;
         const mouseRotationY = mouseRef.current.x * 0.1;
         
-        mesh.rotation.x += 0.005 + mouseRotationX * 0.002;
-        mesh.rotation.y += 0.003 + mouseRotationY * 0.002;
-        mesh.rotation.z += 0.002;
+        mesh.rotation.x += (0.005 + mouseRotationX * 0.002) * 0.7;
+        mesh.rotation.y += (0.003 + mouseRotationY * 0.002) * 0.7;
+        mesh.rotation.z += 0.002 * 0.7;
         
         // Enhanced pulse effect when hovered
         if (isHoveredRef.current) {
